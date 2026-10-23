@@ -1,0 +1,129 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 30px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #e8f5e9, #f5fbf5);
+    color: #24352a;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 700px;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(30, 90, 45, 0.14);
+    border: 1px solid #dcebdd;
+}
+
+.chat-header {
+    background: #218344;
+    color: white;
+    text-align: center;
+    padding: 22px 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.chat-box {
+    height: 420px;
+    padding: 20px;
+    overflow-y: auto;
+    background: #fbfdfb;
+}
+
+.bot-message,
+.user-message {
+    max-width: 85%;
+    margin: 12px 0;
+    padding: 13px 16px;
+    border-radius: 14px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.bot-message {
+    margin-right: auto;
+    background: #edf5ed;
+    border: 1px solid #dfebdf;
+    border-bottom-left-radius: 4px;
+}
+
+.user-message {
+    margin-left: auto;
+    background: #d5f2dc;
+    border-bottom-right-radius: 4px;
+}
+
+.chat-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 16px;
+    border-top: 1px solid #e3ece3;
+    background: white;
+}
+
+.chat-input input[type="text"] {
+    flex: 1 1 220px;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #cbdccb;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+.chat-input input[type="text"]:focus {
+    border-color: #218344;
+    box-shadow: 0 0 0 3px rgba(33, 131, 68, 0.1);
+}
+
+.chat-input input[type="file"] {
+    width: 100%;
+    font-size: 13px;
+}
+
+.chat-input button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 10px;
+    background: #218344;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background: #176532;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+        align-items: flex-start;
+    }
+
+    .chat-header {
+        font-size: 21px;
+    }
+
+    .chat-box {
+        height: 55vh;
+        min-height: 300px;
+    }
+
+    .chat-input button {
+        flex: 1;
+    }
+}

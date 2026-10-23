@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Bot - Plant Pest Doctor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="chat-header">
+        🌱 Plant Bot — Plant Pest Doctor
+    </div>
+
+    <div class="chat-box" id="chatBox">
+        <div class="bot-message">
+            Hello! 🌱<br>
+            Describe your plant problem below to get basic pest guidance.
+        </div>
+    </div>
+
+    <div class="chat-input">
+        <input type="file" id="imageInput" accept="image/*">
+        <input
+            type="text"
+            id="textInput"
+            placeholder="e.g. holes in leaves, white insects"
+        >
+        <button type="button" onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
